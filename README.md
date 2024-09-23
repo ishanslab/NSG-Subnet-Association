@@ -11,6 +11,12 @@ This script performs the following steps:
 5. If the subnet does not have an NSG and is not in the exclusion list, creates a default NSG and associates it with the subnet.
 6. Generates a report of the subnets that were modified.
 
+# Important Note:  
+- Running this script may cause connectivity issues with the application.
+- Ensure you test this script in a non-production environment first.
+- Modify the script as needed.
+- Only apply it to the production environment after thorough testing.
+
 ## Example
 
 ```powershell
