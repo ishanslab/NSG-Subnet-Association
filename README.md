@@ -20,17 +20,17 @@ This script performs the following steps:
 ## Example
 
 ```powershell
-.\nsg-to-subnet-blog.ps1 -Subid "your-subscription-id"
+.\nsg-subnet-association.ps1 -Subid "your-subscription-id"
 ```
 
 This example logs into the specified subscription and ensures all subnets have an NSG associated with them, excluding the default subnets.
 
 ```powershell
-.\nsg-to-subnet-blog.ps1 -Subid "your-subscription-id" -subnet_to_exclude @("CustomSubnet1", "CustomSubnet2")
+.\nsg-subnet-association.ps1 -Subid "your-subscription-id" -subnet_to_exclude @("CustomSubnet1", "CustomSubnet2")
 
 # or
 
-.\nsg-to-subnet-blog.ps1 -Subid "your-subscription-id" -subnet_to_exclude "CustomSubnet1", "CustomSubnet2"
+.\nsg-subnet-association.ps1 -Subid "your-subscription-id" -subnet_to_exclude "CustomSubnet1", "CustomSubnet2"
 ```  
 
 This example logs into the specified subscription and ensures all subnets have an NSG associated with them, excluding the default subnets and the custom subnets "CustomSubnet1" and "CustomSubnet2".  
